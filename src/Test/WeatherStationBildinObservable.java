@@ -25,7 +25,7 @@ public static void main(String[] args) {
 	weatherDataObservable.setMeasurements(82, 70, 29.2f);
 	weatherDataObservable.setMeasurements(78, 90, 29.2f);
 	
-	
+	currentConditionsDisplayBuildinObserver.renewData();
 
 	}
 

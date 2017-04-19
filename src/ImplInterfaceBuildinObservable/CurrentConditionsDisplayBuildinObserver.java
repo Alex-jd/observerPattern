@@ -37,5 +37,18 @@ public class CurrentConditionsDisplayBuildinObserver implements Observer, Displa
 			display();
 		}
 	}
+	
+	/**
+	 *  method get the current data from Subject
+	 * @param no params
+	 */
+	public void renewData() {
+		if (observable instanceof WeatherDataObservable) {
+			WeatherDataObservable weatherDataObservable = (WeatherDataObservable) observable;
+			this.temperature = weatherDataObservable.getTemperature();
+			this.humidity = weatherDataObservable.getHumidity();
+			display();
+		}
+	}
 
 }
