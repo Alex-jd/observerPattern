@@ -24,6 +24,8 @@ public static void main(String[] args) {
 	weatherDataObservable.setMeasurements(80, 65, 30.4f);
 	weatherDataObservable.setMeasurements(82, 70, 29.2f);
 	weatherDataObservable.setMeasurements(78, 90, 29.2f);
+	
+	
 
 	}
 
